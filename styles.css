@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #123524, #071b12);
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 460px;
+    text-align: center;
+    background: #193d2c;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #0006;
+}
+
+h1 {
+    color: #8df5a6;
+    margin-bottom: 8px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0 12px;
+    font-weight: bold;
+}
+
+#status {
+    color: #ffd166;
+    font-size: 14px;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #a8d98d;
+    border: 4px solid #8df5a6;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+#startBtn {
+    margin-top: 18px;
+    background: #8df5a6;
+    color: #123524;
+    width: 100%;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.controls {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.controls div {
+    display: flex;
+    gap: 10px;
+}
+
+.controls button {
+    background: #315e43;
+    color: white;
+    min-width: 58px;
+    min-height: 48px;
+}
+
+.instruction {
+    font-size: 13px;
+    color: #d4ead8;
+    line-height: 1.5;
+}
